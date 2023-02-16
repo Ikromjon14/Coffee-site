@@ -1,0 +1,19 @@
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+  @media (max-width: $desktop) {
+    max-width: $tablet;
+  }
+  @media (max-width: $tablet) {
+    max-width: 100%;
+  }
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}

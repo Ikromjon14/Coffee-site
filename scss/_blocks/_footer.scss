@@ -1,0 +1,38 @@
+.footer {
+  margin-top: 216px;
+  align-items: center;
+  display: flex;
+  background-color: $black;
+  justify-content: space-between;
+  padding: 45px;
+
+  @media (max-width: $desktop) {
+    width: 688px;
+    height: 270px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 160px;
+  }
+}
+
+.footer_iner {
+  display: flex;
+  gap: 33px;
+
+  a {
+    text-decoration: none;
+    color: rgba(131, 136, 143, 1);
+  }
+  li {
+    list-style: none;
+  }
+
+  a {
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: blue;
+    }
+  }
+}
